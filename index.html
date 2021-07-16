@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>天幕安全团队</title>
+    <link rel="shortcut icon" href="favcion.ico" />
+    <link rel="stylesheet" href=" css/iconfont.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .index_title {
+
+            padding: 20px 0;
+            /* display: -webkit-box; */
+            display: -ms-flexbox;
+            display: flex;
+            /* -webkit-box-pack: center; */
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            background: #30333c;
+            color: white;
+            font-size: 18px;
+            position: sticky;
+            top: 0;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.04);
+        }
+
+        .left_style_li {
+            padding-left: 40px;
+            color: rgb(107, 115, 134);
+            background-color: rgb(48, 51, 60);
+            height: 50px;
+            line-height: 50px;
+            padding: 0 45px;
+            min-width: 200px;
+            cursor: pointer;
+        }
+
+        .left_style_li div {
+            color: #6b7386;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .left_style_li:hover{
+            background-color: rgb(40 43 45);
+        }
+        .teamintroduced {
+            color:gray;
+            font-size:12px;
+            padding-top:10px;
+            height:35px;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            display:-webkit-box;
+            -webkit-line-clamp:2;
+            -webkit-box-orient:vertical;
+            cursor: pointer;
+        }
+        .iconfont{
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        <aside class="left-bar" id="leftBar">
+            <div>
+                <p class="index_title">天幕安全团队</p>
+            </div>
+            <nav class="nav">
+
+                <ul class="nav-item" id="navItem">
+                    <li class="left_style_li">
+                        <div onclick="click_go(this)" gohref="bbs" class="active"><i
+                                class="iconfont icon-wendangdocument78"></i>团队简介</div>
+                    </li>
+                    <li class="left_style_li">
+                        <div onclick="click_go(this)" style="color: white;"><i class="iconfont icon-shequ"></i>核心成员</div>
+                    </li>
+                   
+                   
+                </ul>
+                <!-- <div class="item comment"><a target="_blank" href=""><i
+                            class="iconfont icon-liuyan"></i>留言</a></div> -->
+                            <footer class="footer">
+                                <div class="copyright">
+                                    <div>
+                                        Copyright © 2021
+                                        
+                                    </div>
+                                </div>
+                            </footer>
+            </nav>
+        </aside>
+        <section class="main">
+            <div id="mainContent">
+                <!-- 手机端菜单 -->
+                <div id="menu-box">
+                    <div id="menu">
+                        <input type="checkbox" id="menu-form">
+                        <label for="menu-form" class="menu-spin">
+                            <div class="line diagonal line-1"></div>
+                            <div class="line horizontal"></div>
+                            <div class="line diagonal line-2"></div>
+                        </label>
+                    </div>
+                </div>
+                <!-- 团队简介 -->
+                <div class="box">
+                    <a href="#" name="bbs"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont  icon-wendangdocument78"></i>团队简介</div>
+                    </div>
+                    <div>
+                        <a target="_blank">
+                            <div class="item" style="width: calc(100% - 100px);">
+                                 <div class="logo" style="color: red;"><!-- <img src="" alt=""> --> 指笼罩大地的天空,以攻促防。攻防结合，所向披靡</div> 
+                                <div class="teamintroduced">天幕安全团队是由一帮有多年经验的红队选手组成，致力于帮助企业进行安全的威胁发现、漏洞预警。帮助在校大学生熟悉网络安全知识，增强网络安全意识。</div>
+                                <div class="teamintroduced"><strong>研究方向：</strong>漏洞挖掘、CTF、红蓝对抗、授权渗透测试、木马分析等</div>
+                            </div>
+                        </a>
+                     
+                    </div>
+                </div>
+                <!-- 核心成员 -->
+                <div class="box">
+                    <a href="#" name="sill"></a>
+                    <div class="sub-category">
+                        <div><i class="iconfont icon-shequ"></i>团队成员</div>
+                    </div>
+                    <div>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo"><img src="img/rabbitq.jpg" alt="腾讯 AlloyTeam 团队"> RabbitQ</div>
+                                <div class="desc">团队创始人，有多年工作经验，擅长安全开发，web渗透测试，混子一枚（官网是我做的，这句话我要了）</div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo"><img src="img/kunpeng.jpg" alt="ISUX">鲲鹏</div>
+                                <div class="desc">团队创始人，前运维架构师，熟悉内网，linux，应急体系。主研究方向：内网，代码审计，免杀，工具开发</div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/7kb.jpg"> 7kbstorm
+                                </div>
+                                <div class="desc">
+                                    信息安全独立研究员，SecQuan联合创始人，T00ls论坛管理团队成员，网络尖刀核心团队成员，致力于一线红队项目8年，资深安全开发工程师。
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/baichenshan.jpg"> 白衬衫</div>
+                                <div class="desc">
+                                    知道创于seebug2021上半年top10， CNVD贡献海康、斐讯、RAISECOM 等安全产品的相关原创漏洞，个人信念：乐于分享，做为一个资深的自学小菜鸟深知自学的不容易，所以很喜欢分享给新手师傅一些小技巧帮助快速入门。
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/medas.jpg"> medas
+                                </div>
+                                <div class="desc">
+                                    有多年的安全开发经验；主要擅长安全开发。主用语言python/golang
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/qingy.jpg"> Qingy
+                                </div>
+                                <div class="desc">
+                                    Qingy漏洞库创建者，十年挖一洞的混子。研究方向：漏洞挖掘、内网渗透、木马免杀
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/zaixai.jpg"> 在下小黄
+                                </div>
+                                <div class="desc">
+                                    前机械工程师，参加过长征五号B遥一运载火箭整流罩抛光设备的研发，参与2017年国家重点研发计划智能机器人专项指南3.4＂混联机器人项目＂，核武器点火镜头抛光设备的研发，擅长运动控制，对运动学、动力学具有一定的研究。发过三篇专利（两篇新型、一篇发明），正在学习渗透和漏洞挖掘
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/wenong.jpg"> WenONG
+                                </div>
+                                <div class="desc">
+                                    某安全公司小白帽一枚，参加多次红蓝对抗项目，跟踪过几起大型网络诈骗案件，致力于国家安全做出自己贡献，服务于各大名校安全保障。专注于渗透测试、漏洞挖掘、内网渗透、信息收集。研究方向：编程、逆向。
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/xiaodong.jpg"> 小东
+                                </div>
+                                <div class="desc">
+                                    擅长安全开发，漏洞挖掘，漏洞复现，WEB外围打点，熟悉小程序，app渗透测试，但各方面都很平庸，正在努力进步补齐自己的短板。
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/thorn.jpg"> Thorn_
+                                </div>
+                                <div class="desc">
+                                    擅长：复现，漏扫，免杀、漏洞挖掘、c、shell 。研究方向：逆向，破解，二进制，期待和大家共同进步
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/jiuyue.jpg"> 九月
+                                </div>
+                                <div class="desc">
+                                    参加过多场省级及市级红队，热爱信息安全，目前就职于微步在线。擅长：内网横向移动。
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/xuangongzi.jpg"> 轩公子
+                                </div>
+                                <div class="desc">
+                                    专注web渗透测试，APP安全，擅长内网渗透，木马免杀等，研究方向：代码审计
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/z4yn.jpg"> Z4yn:)
+                                </div>
+                                <div class="desc">
+                                    红队方向，web一般，内网菜鸡，CTF菜鸟。THM，HTB,Python
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/insmile.jpg"> insmile
+                                </div>
+                                <div class="desc">
+                                    擅长web打点，各种nday的使用。擅长内网渗透。web方面：获得过教育src浙大证书、cnvd通用漏洞证书。擅长使用python。参加过多次hvv（红队+蓝队）
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank">
+                            <div class="item">
+                                <div class="logo">
+                                    <img src="img/shincehor.jpg"> shincehor
+                                </div>
+                                <div class="desc">
+                                    擅长：内网渗透和web渗透。方向：美团跑腿，滴滴司机
+                                </div>
+                            </div>
+                        </a>
+                     
+                    </div>
+                </div>
+                <!-- 联系我们 -->
+                
+               
+                
+                <div id="fixedBar"><svg class="Zi Zi--BackToTop" title="回到顶部" fill="currentColor" viewBox="0 0 24 24"
+                        width="24" height="24">
+                        <path
+                            d="M16.036 19.59a1 1 0 0 1-.997.995H9.032a.996.996 0 0 1-.997-.996v-7.005H5.03c-1.1 0-1.36-.633-.578-1.416L11.33 4.29a1.003 1.003 0 0 1 1.412 0l6.878 6.88c.782.78.523 1.415-.58 1.415h-3.004v7.005z">
+                        </path>
+                    </svg></div>
+        </section>
+        <script src="js/jquery.js"></script>
+        <script>
+            var oMenu = document.getElementById('menu');
+            var oLeftBar = document.getElementById('leftBar');
+            var menuFrom = document.getElementById('menu-form');
+
+            oMenu.onclick = function () {
+                if (oLeftBar.offsetLeft == 0) {
+                    oLeftBar.style.left = -249 + 'px';
+                }
+                else {
+                    oLeftBar.style.left = 0;
+                }
+            }
+
+
+            // 监听页面宽度变化
+            window.onresize = function () {
+                judgeWidth();
+                // console.log(document.documentElement.clientWidth);
+            };
+
+            // 判断页面宽度
+            function judgeWidth() {
+                if (document.documentElement.clientWidth > 481) {
+                    oLeftBar.style.left = 0;
+                } else {
+                    oLeftBar.style.left = -249 + 'px';
+                }
+            }
+            function click_go(dom) {
+                $('html,body').animate({ scrollTop: $("[name='" + $(dom).attr("gohref") + "']").offset().top }, 800);
+
+            }
+
+            var oNavItem = document.getElementById('navItem');
+            var aA = oNavItem.getElementsByTagName('a');
+            for (var i = 0; i < aA.length; i++) {
+                aA[i].onclick = function () {
+                    for (var j = 0; j < aA.length; j++) {
+                        aA[j].className = '';
+                    }
+                    this.className = 'active';
+                    if (oLeftBar.offsetLeft == 0) {
+                        if (document.documentElement.clientWidth <= 481) {
+                            oLeftBar.style.left = -249 + 'px';
+                            menuFrom.checked = false;
+
+                        }
+                    }
+                }
+            }
+
+
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= 200) {
+                    $('#fixedBar').fadeIn(300);
+                } else {
+                    $('#fixedBar').fadeOut(300);
+                }
+            });
+            $('#fixedBar').click(function () {
+                $('html,body').animate({ scrollTop: '0px' }, 800);
+            })
+        </script>
+</body>
+
+</html>
